@@ -119,3 +119,11 @@ Scala Successes
 
 OCaml Successes
 * [Jane Street](https://www.janestreet.com/technology/)
+
+Erlang/Elixir
+* [Goldman Sachs](https://www.erlang-solutions.com/blog/which-companies-are-using-erlang-and-why-mytopdogstatus/)
+* [Nintendo](https://www.erlang-solutions.com/blog/which-companies-are-using-erlang-and-why-mytopdogstatus/)
+* [Pinterest](https://paraxial.io/blog/elixir-savings)
+
+https://medium.com/coryodaniel/from-erverless-to-elixir-48752db4d7bc
+(https://codesync.global/media/successful-companies-using-elixir-and-erlang/)
