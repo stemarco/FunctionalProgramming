@@ -39,16 +39,67 @@ Project Outline
   * basic syntax 
 * lists
   * properties 
+    * linearly ordered collection of values
+    * lists are equal iff both lists have the same elements in the same order
+    * identity element is empty list
+    * may be either finite or infinite
+  * conventions
+    * head: first element of a list, also known as car (LISP languages), fst (Haskel)
+    * tail: remainder of a list after removing the head, also known as cdr (LISP), rest
+    * xs: list of elements of x
+    * x:xs : list of elements with head x and tail xs
+  * operations, a non-exhaustive list
+    * cons, (:): 
+    * head [] = tail [] = $\bot$
+    * ++: concatenation [1] ++ [2] => [1, 2] Q: 1 + [2] =>
+    * #: length of a finite list. Note: depending on implementation, it is possible calling length on an infinite list may never return
+      * #(xs ++ ys) = #xs + #ys  Q: is this a homomorphism 
+    * take, drop: take (or remove) an initial segment of a list
+      * take n xs ++ drop n xs = xs
+    * find: 
+    * reverse: reverses a list
+    * zip: pairs corresponding elements of two lists
+    * zipWith: pairwise applies a binary operation to items of two lists
+      * 
+    * map, map f xs: 
+      * map (f $\cdot$ g) =  map (f) $\cdot$  map(g)
+      * map homomorphism: map f (xs ++ ys) = (map f xs) ++ (map f ys)
+      * Examples
+        * map (1) [1..5] => [1, 1, 1, 1, 1] where (1) is a function that takes a value and returns the number 1
+    * filter, filter p xs: where p is a function that takes a value from xs and returns either true or false, a predicate function
+       * Examples
+        * filter (true) xs = xs; where (true) is a function that takes a value and returns true
+          * filter (false) xs = ?
+          * filter isEven [1..10] = ?; where isEven behaves as expected and takes a number and returns true iff the number is even
+        * Q: can filter be used to select items from a list only if the current item is > the prior element: 
+            [1, 0, 2, 3, -1] => [1, 2, 3] or 
+            [1, 0, 2, 3, -1, 0] => => [1, 2, 3 0]
+    * fold, also known as reduce: takes a binary operator and a list and produces a single value
+      * foldr
+      * foldl
   * reprentation:
-    * CSV
-    * Bracket
-    * constructors: cons, quote, :, []
+    * as text
+      * CSV
+      * Bracket
+        * []: the empty list
+        * [[]]: a singleton list containing the empty list
+        * [1]: a singlton list containing the number 1
+        * [[], [1], [2], [1, 2]]: a list containing four elements Q: do you recognize this list
+        * [1..5]: a list containing the integers 1 through 5 inclusive. Q: [1..5] =?= [1, 2, 3, 4, 5]
+        * [1, 3..11]: the odd integers from 1 to 11, inclusive.
+        * [1..]: an infinite list of integers starting with 1
+      * Comprehension
     * memory layout options
       * fixed size objects in fixed sized block aka C-style malloc 
+    * as code
+      * constructors: cons, quote, :, []
+      * comprehensions
+      * generators
     * infinite lists
   * Basic Operations
     * append, map, reduce, filter, flatten
-    * Richard Bird     
+    * Richard Bird 
+      * [Introduction to functional programming](https://archive.org/details/introductiontofu0000bird/page/n7/mode/2up) chap 3
 * model problems I
   * sum/product
   * factorial
@@ -57,6 +108,7 @@ Project Outline
 * Less Basic Math
   * Functions
     * with pattern matching (storm categories)
+      * will be used to define implementations
     * Recursive definitions (fibonacci)
   * Ordering, lattice 
   * Lambda Calculus 
