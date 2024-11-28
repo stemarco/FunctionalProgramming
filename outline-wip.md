@@ -74,3 +74,48 @@ Logic
 
 Mind-numbingly obvious facts you might have missed
 * Inner product gets its name because it defines a vector in the direction between two vectors. Two orthogonal vector have an inner product of zero as there is no common direction.
+
+
+Too Many Lisps
+* [ABCL](https://common-lisp.net/project/armedbear/): Common Lisp running in the JVM
+* [SBCL](http://www.sbcl.org/)
+* [Allegro CL ®](https://franz.com/products/allegro-common-lisp/): Commercial with free option for non-commerical purposes
+
+Commercial Lisp Successes
+* [ITA]()
+* [Grammarly](https://www.grammarly.com/blog/engineering/running-lisp-in-production/)
+* [Lissys Ltd.](https://lisp-lang.org/success/aero/)
+* [MusicEase](https://www.musicease.com/index.html)
+* [Viaweb](https://www.paulgraham.com/avg.html)
+
+
+https://gambit.scheme.org/
+
+Too Many Schemes
+* [Bigloo](https://bigloo.scheme.org/)
+* [ChezScheme](https://chez.scheme.org/)
+* [Gambit] (https://gambit.scheme.org/)
+* [Guile](https://guile.scheme.org/)
+* [Kawa](https://kawa.scheme.org/)
+* [MIT/GNU Scheme](https://mit.scheme.org/)
+* [Racket](https://racket-lang.org/)
+
+even more: https://get.scheme.org/
+
+
+Haskell Successes
+* [Facebook](https://code.fb.com/security/fighting-spam-with-haskell/)
+* [Target](https://www.youtube.com/watch?v=0EgHNq6Pej8)
+
+Clojure Successes
+* [AnyChart](https://www.anychart.com/blog/2018/04/11/clojure-clojurescript-anychart/)
+* [Atlassian](https://www.youtube.com/watch?v=3QR8meTrh5g)
+* [Walmart](https://cognitect.com/blog/2015/6/30/walmart-runs-clojure-at-scale)
+
+Scala Successes
+* [Duolingo](https://blog.duolingo.com/rewriting-duolingos-engine-in-scala/)
+* [John Deere](https://akka.io/customer-stories/john-deere-improves-crop-yields-with-precision-agriculture) (Akka)
+* [CERN](https://akka.io/customer-stories/akka-helps-keep-groundbreaking-physics-experiments-running-smoothly) (Akka)
+
+OCaml Successes
+* [Jane Street](https://www.janestreet.com/technology/)
