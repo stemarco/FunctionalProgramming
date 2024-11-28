@@ -99,7 +99,7 @@ Project Outline
   * Basic Operations
     * append, map, reduce, filter, flatten
     * Richard Bird 
-      * [Introduction to functional programming](https://archive.org/details/introductiontofu0000bird/page/n7/mode/2up) chap 3
+      * [Introduction to Functional Programming](https://archive.org/details/introductiontofu0000bird/page/n7/mode/2up) chap 3, 5, 7
 * model problems I
   * sum/product
   * factorial
@@ -109,7 +109,11 @@ Project Outline
   * Functions
     * with pattern matching (storm categories)
       * will be used to define implementations
+      * Problem: write function to swap first two items in a list. What are the cases to consider? How should each be handled?
     * Recursive definitions (fibonacci)
+    * Infinite Lists
+      * iterate
+        * Sieve of Eratosthenes
   * Ordering, lattice 
   * Lambda Calculus 
   * Category Theory Pt II
@@ -119,8 +123,19 @@ Project Outline
     * https://web.stanford.edu/class/archive/cs/cs103/cs103.1132/lectures/06/Slides06.pdf [Bare bones slides does not make best explanations]
     * An Invitation to Applied Category Theory Seven Sketches in Compositionality, Fong & Spivak
     * Category Theory for Programmers (https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/), Bartosz Milewski <br/> Creative Commons Attribution-ShareAlike 4.0 International License
+    * Introduction to Functional Programming, chap 7
  
 * Types
+
+
+ The two line sieve
+ ```code
+ primes            = map head (iterate sieve [2..])
+ sieve (p:xs)      = { x | x <- xs, x mod p $\ne$ 0 } 
+```
+
+Key ideas are that the head of the iterated list is always a prime and the next prime is computed lazily, i.e. only when the head is taken
+
 
 Logic
 
